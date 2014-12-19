@@ -25,10 +25,16 @@ then
 	# MacPorts Installer addition on 2014-12-12_at_17:13:04: adding an appropriate PATH variable for use with MacPorts.
 	export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 	# Finished adapting your PATH environment variable for use with MacPorts.
+	
+	# SPECIFIC ALIASES
+	alias ls='ls -1sh'
+
 fi
 
-
-# ALIASES #####
-alias ll='ls -la'
-alias ls='ls -1sh --color=auto'
-
+# LINUX SPECIFIC STUFF
+if [ $(uname) == "Linux" ]
+then
+	# ALIASES #####
+	alias ll='ls -la'
+	alias ls='ls -1sh --color=auto'
+fi
