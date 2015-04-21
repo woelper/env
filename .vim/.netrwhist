@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/opt/local/var/run/nginx/fastcgi_temp'
 let g:netrw_dirhist_2='/Users/jwoelper/fat/.git'
 let g:netrw_dirhist_3='/Volumes/exchange/MayaExporterApril/dist'
+let g:netrw_dirhist_4='/projects/xten/data'
+let g:netrw_dirhist_5='/projects/xten/data/xten'
+let g:netrw_dirhist_6='/projects/xten/data/xten/ui'
+let g:netrw_dirhist_7='/tools'

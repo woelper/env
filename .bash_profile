@@ -4,12 +4,15 @@
 
 # OS INDEPENDENT STUFF
 alias gs='git status'
+#alias 'git st' = 'git status'
 
 
 # OSX SPECIFIC STUFF #####
 if [ $(uname) == "Darwin" ]
 then
-	# ITERM SPECIFIC ######
+
+    alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+    # ITERM SPECIFIC ######
 	# Set CLOLOR if you want Ansi Colors in iTerm2 
 	export CLICOLOR=1
 	# Set colors to match iTerm2 Terminal Colors
@@ -20,7 +23,8 @@ then
 	MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 	export FIGNORE=DS_Store
 
-	if [ $ITERM_SESSION_ID ]; then
+	if [ $ITERM_SESSION_ID ]
+    then
 		export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
 	fi
 
@@ -32,6 +36,8 @@ then
 	
 	# SPECIFIC ALIASES
 	alias ls='ls'
+    PVRTOOL="/Applications/Imagination/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86/PVRTexToolCLI"
+    alias PVR=$PVRTOOL
 
 fi
 
